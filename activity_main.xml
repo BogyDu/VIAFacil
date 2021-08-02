@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#FFFFFF"
+    android:backgroundTintMode="src_in"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:elevation="100dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="match_parent"
+            android:layout_height="450dp"
+            android:layout_marginTop="20dp"
+            android:paddingBottom="30dp" />
+
+        <ImageButton
+            android:id="@+id/gal"
+            android:layout_width="130dp"
+            android:layout_height="122dp"
+            android:layout_below="@+id/image"
+            android:layout_marginStart="85dp"
+            android:layout_marginTop="-2dp"
+            android:layout_toEndOf="@+id/cam"
+            android:background="@drawable/unknown" />
+
+        <TextView
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cam"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="27dp"
+            android:layout_marginTop="-5dp"
+            android:text="CÁMARA"
+            android:textAlignment="center"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:layout_width="113dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/gal"
+            android:layout_marginStart="96dp"
+            android:layout_marginTop="4dp"
+            android:layout_toEndOf="@+id/cam"
+            android:text="GALERÍA"
+            android:textAlignment="center"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <ImageButton
+            android:id="@+id/cam"
+            android:layout_width="130dp"
+            android:layout_height="122dp"
+            android:layout_below="@+id/image"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="-2dp"
+            android:background="@drawable/ic_baseline_camera_alt_24" />
+
+
+        <TextView
+            android:id="@+id/classifytext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cam"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textSize="28dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/descripcion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/classifytext"
+            android:layout_centerHorizontal="true"
+            android:padding="10dp"
+            android:textSize="30dp" />
+
+
+    </RelativeLayout>
+
+    </ScrollView>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/pl"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_gravity="end"
+        android:scrollbars="none"
+        android:layout_marginTop="178dp"
+        android:layout_marginEnd="15dp"
+        android:contentDescription="Pp"
+        android:src="@drawable/play"
+        app:backgroundTint="#FFFFFF" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/pa"
+        android:scrollbars="none"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_gravity="end"
+        android:layout_marginTop="178dp"
+        android:layout_marginEnd="15dp"
+        android:contentDescription="Pp"
+        android:src="@drawable/ic_baseline_pause_24"
+        app:backgroundTint="#FFFFFF" />
+
+</RelativeLayout>
